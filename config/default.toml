@@ -1,0 +1,16 @@
+# Aura default configuration
+[model]
+path = "models/qwen-0.5b-iq1_s.gguf"
+context_size = 512
+
+[search]
+enabled = true
+instance_url = "https://searx.be"
+
+[security]
+sandbox = true
+confirm_dangerous = true
+
+[api]
+brave_key = ""
+openai_key = ""

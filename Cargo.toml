@@ -1,0 +1,40 @@
+[package]
+name = "thoth"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Core AI (llama-cpp binding for Rust)
+llama-cpp-rs = "0.1"
+
+# Async runtime for network calls
+tokio = { version = "1", features = ["full"] }
+
+# Serialization for API
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+# Security & parsing
+regex = "1"
+
+# System profiling
+nix = "0.29"
+
+# CLI UI
+clap = { version = "4", features = ["derive"] }
+colored = "2"
+dialoguer = "0.11"
+
+# Error handling
+anyhow = "1"
+thiserror = "1"
+
+# Async HTTP client (for API fallback)
+reqwest = { version = "0.12", features = ["json", "rustls-tls"] }
+
+# Privacy: URL scrubbing
+url = "2"
+
+# Temp files and paths
+dirs = "5"
+tempfile = "3"
